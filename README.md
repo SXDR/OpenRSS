@@ -71,15 +71,15 @@ Download datasets and place them in 'datasets' folder in the following structure
 # Training
 
 ```python
-python train.py -dr [data_dir] -ls 0.0005 -b 4 -em 300
+python train_KP.py -dr [data_dir] -ls 0.0005 -b 4 -em 300
 ```
 
 # Evaluation
 
 ```python
-python run_own_MF.py -dr [data_dir] -d [test] -f best.pth
-python run_own_FT.py -dr [data_dir] -d [test] -f best.pth
-python run_own_MCubeS.py -dr [data_dir] -d [test] -f best.pth
+python own_MF.py -dr [data_dir] -d [test] -f best.pth
+python own_FT.py -dr [data_dir] -d [test] -f best.pth
+python own_MCubeS.py -dr [data_dir] -d [test] -f best.pth
 ```
 
 # RESULTS
