@@ -1,0 +1,10 @@
+scikit-learn 
+tensorboardX 
+pytorch_toolbelt==0.1.3 
+tabulate 
+einops 
+icecream 
+safetensors 
+fvcore 
+ftfy 
+regex
