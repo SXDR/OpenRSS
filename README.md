@@ -8,6 +8,86 @@ This is the official repository of our paper:
 
 ![openrss](./assets/openrss.png)
 
+# Installation
+
+## Requirements
+
+- PyTorch 1.11.0
+
+- Python 3.8(ubuntu20.04)
+
+- Cuda 11.3
+
+## Install required packages
+
+```python
+pip install -r requirements.txt
+```
+
+# Dataset
+
+Download datasets and place them in 'datasets' folder in the following structure:
+
+- [MFNet dataset](https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral/)
+- [MCubeS dataset](https://vision.ist.i.kyoto-u.ac.jp/)
+- [KP dataset](https://github.com/SoonminHwang/rgbt-ped-detection)
+- [FT dataset](http://thermal.cs.uni-freiburg.de/)
+
+```
+<datasets>
+|-- <MFdataset>
+    |-- <images>
+    |-- <labels>
+    |-- train.txt
+    |-- val.txt
+    |-- test.txt
+    ...
+|-- <MCUbeSdataset>
+    |-- <list_folder>
+    |-- <NIR_warped>
+    |-- <poIL_color>
+    |-- <SSGT4MS>
+    ...
+|-- <KPdataset>
+    |-- <images>
+        |-- set00
+        |-- set01
+        ...
+    |-- <labels>
+    |-- train.txt
+    |-- val.txt
+    |-- test.txt
+    ...
+|-- <FTdataset>
+    |-- <test>
+        |-- <label>
+        |-- <rgb>
+        |-- <th>
+    ...
+```
+
+
+
+# Training
+
+```python
+python train.py -dr [data_dir] -ls 0.0005 -b 4 -em 300
+```
+
+# Evaluation
+
+```python
+python run_own_MF.py -dr [data_dir] -d [test] -f best.pth
+python run_own_FT.py -dr [data_dir] -d [test] -f best.pth
+python run_own_MCubeS.py -dr [data_dir] -d [test] -f best.pth
+```
+
+# RESULTS
+
+![result](./assets/result.png)
+
+
+
 # Code and checkpoints
 
 Coming soon!
