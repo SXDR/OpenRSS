@@ -88,6 +88,6 @@ python own_MCubeS.py -dr [data_dir] -d [test] -f best.pth
 
 
 
-# Code and checkpoints
+# Checkpoints
 
 Coming soon!
