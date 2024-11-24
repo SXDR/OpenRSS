@@ -2,7 +2,7 @@
 
 
 
-This is the official repository of our paper:
+This is the official repository for the ***OpenRSS*** (ECCV 2024).
 
 **Abstract:** RGB-Thermal (RGB-T) semantic segmentation is an important research branch of multi-modal image segmentation. The current RGB-T semantic segmentation methods generally have two unsolved and typical shortcomings. First, they do not have the open-vocabulary recognition ability, which significantly limits their application scenarios. Second, when fusing RGB and thermal images, they often need to design complex fusion network structures, which usually results in low network training efficiency. We present OpenRSS, the **Open**-vocabulary **R**GB-T **S**emantic **S**egmentation method, to solve these two disadvantages. To our knowledge, OpenRSS is the first RGB-T semantic segmentation method with open-vocabulary segmentation capability. OpenRSS modifies the basic segmentation model SAM for RGB-T semantic segmentation by adding the proposed thermal information prompt module and dynamic low-rank adaptation strategy to SAM. These designs effectively fuse the RGB and thermal information, but with much fewer trainable parameters than other methods. OpenRSS achieves the open-vocabulary capability by jointly utilizing the vision-language model CLIP and the modified SAM. Through extensive experiments, OpenRSS demonstrates its effective open-vocabulary semantic segmentation ability on RGB-T images. It outperforms other state-of-the-art RGB open-vocabulary semantic segmentation methods on multiple RGB-T semantic segmentation benchmarks: +12.1% mIoU on the MFNet dataset, +18.4% mIoU on the MCubeS dataset, and +21.4% mIoU on the Freiburg Thermal dataset. 
 
@@ -90,4 +90,23 @@ python own_MCubeS.py -dr [data_dir] -d [test] -f best.pth
 
 # Checkpoints
 
-Coming soon!
+The pre-trained checkpoints of OpenRSS can be downloaded from
+
+[https://drive.google.com/drive/folders/10BF2LhcQyjzNGfd5CNOGHlBs_WX8Zg4Y](https://drive.google.com/drive/folders/10BF2LhcQyjzNGfd5CNOGHlBs_WX8Zg4Y)
+
+
+
+# Citation
+
+If you find OpenRSS is helpful for your research, please consider giving it a star and citing it:
+
+```python
+@inproceedings{OpenRSS,
+  title={Open-Vocabulary RGB-Thermal Semantic Segmentation},
+  author={Zhao, Guoqiang and Huang, Junjie and Yan, Xiaoyun and Wang, Zhaojing and Tang, Junwei and Ou, Yangjun and Hu, Xinrong and Peng, Tao},
+  booktitle={Computer Vision -- ECCV 2024},
+  year={2025},
+  pages={304--320}
+}
+```
+
