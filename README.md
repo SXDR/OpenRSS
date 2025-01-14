@@ -92,9 +92,7 @@ python own_MCubeS.py -dr [data_dir] -d [test] -f best.pth
 
 The pre-trained checkpoints of OpenRSS can be downloaded from
 
-[https://drive.google.com/drive/folders/10BF2LhcQyjzNGfd5CNOGHlBs_WX8Zg4Y](https://drive.google.com/drive/folders/10BF2LhcQyjzNGfd5CNOGHlBs_WX8Zg4Y)
-
-
+[Google Drive](https://drive.google.com/file/d/13h5TsOjGqOcZ6TOX9NuIT33NxNU5NOsn/view?usp=drive_link)
 
 # Citation
 
