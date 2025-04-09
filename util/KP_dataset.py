@@ -58,24 +58,4 @@ if __name__ == '__main__':
     # val_dataset = KP_dataset(data_dir="../../../a_dataset/MFNet_dataset", split='val')
     # test_dataset = KP_dataset(data_dir="../../../a_dataset/MFNet_dataset", split='test')
     trainloader = torch.utils.data.DataLoader(train_dataset, batch_size=4)
-    # print(len(train_dataset))
-    # print(type(trainloader))
-    a, b, c = next(iter(trainloader))
 
-    # print((a == i))
-    print("*"*50)
-
-    print(a.shape)
-    print(b.shape)
-    # print(c.shape)
-
-    # a = a*255
-    # print(a)
-    # print(a.shape)
-    # for i in trainloader:
-    #     a, b, c = i
-    #     print(a)
-    #     if 'N' in c[0]:
-    #         print("drak")
-    #     else:
-    #         print(c)
