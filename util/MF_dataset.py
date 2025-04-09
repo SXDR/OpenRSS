@@ -57,21 +57,4 @@ if __name__ == '__main__':
     val_dataset = MF_dataset(data_dir="../../../a_dataset/MFNet_dataset", split='val')
     test_dataset = MF_dataset(data_dir="../../../a_dataset/MFNet_dataset", split='test')
     trainloader = torch.utils.data.DataLoader(train_dataset, batch_size=4)
-    print(len(train_dataset))
-    print(type(trainloader))
-    a, b, c = next(iter(trainloader))
-    print(c)
-    print(c[0])
-    print(type(c))
-    integer_list = [1 if 'D' in s else 0.5 for s in c]
-    print(integer_list)
 
-    # a = a*255
-    # print(a)
-    # print(a.shape)
-    # for i in trainloader:
-    #     a, b, c = i
-    #     if 'N' in c[0]:
-    #         print("drak")
-    #     else:
-    #         print(c)
